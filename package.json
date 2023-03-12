@@ -5,5 +5,10 @@
   "license": "MIT",
   "devDependencies": {
     "vuepress": "^1.9.9"
+  },
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build",
+    "deploy": "bash deploy.sh"
   }
 }
