@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>大数据知识全栈</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/vuepress-starter/dds.ico">
+    <meta name="description" content="个人笔记，费时费力，转载请注明出处">
+    <meta name="author" content="瑶">
+    <meta name="keywords" content="大数据,大数据知识,Flink,spark,hive,hbase,redis,AI,数据湖">
+    
+    <link rel="preload" href="/vuepress-starter/assets/css/0.styles.99ec6774.css" as="style"><link rel="preload" href="/vuepress-starter/assets/js/app.55d9b2a7.js" as="script"><link rel="preload" href="/vuepress-starter/assets/js/2.733019b2.js" as="script"><link rel="preload" href="/vuepress-starter/assets/js/7.a0edaaa4.js" as="script"><link rel="prefetch" href="/vuepress-starter/assets/js/3.39104db2.js"><link rel="prefetch" href="/vuepress-starter/assets/js/4.d12742be.js"><link rel="prefetch" href="/vuepress-starter/assets/js/5.216cae74.js"><link rel="prefetch" href="/vuepress-starter/assets/js/6.2d0a63f8.js"><link rel="prefetch" href="/vuepress-starter/assets/js/8.e988e4ce.js"><link rel="prefetch" href="/vuepress-starter/assets/js/9.986b627b.js">
+    <link rel="stylesheet" href="/vuepress-starter/assets/css/0.styles.99ec6774.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress-starter/" aria-current="page" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">大数据知识全栈</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          编程基础知识考核
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/basic/c++-basic-use.html" class="nav-link">
+  java
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/basic/c++-basic-use.html" class="nav-link">
+  Jvm
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/basic/c++-basic-use.html" class="nav-link">
+  数据结构与算法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          大数据基础知识考核
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/function/c++-function-Linux_Hook.html" class="nav-link">
+  linux
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/function/c++-function-Linux_Hook.html" class="nav-link">
+  组件原理
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/function/c++-function-Linux_Hook.html" class="nav-link">
+  项目经验
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通用能力考核
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/tips/c++-tips-copy-on-write.html" class="nav-link">
+  表达能力
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/tips/c++-tips-copy-on-write.html" class="nav-link">
+  逻辑思维
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/tips/c++-tips-copy-on-write.html" class="nav-link">
+  性格
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="导读" class="dropdown-title"><span class="title">导读</span> <span class="arrow down"></span></button> <button type="button" aria-label="导读" class="mobile-dropdown-title"><span class="title">导读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          我的经历
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/basic/c++-basic-use.html" class="nav-link">
+  java
+</a></li></ul></li><li class="dropdown-item"><h4>
+          适合人群
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/function/c++-function-Linux_Hook.html" class="nav-link">
+  函数学习
+</a></li></ul></li><li class="dropdown-item"><h4>
+          建议
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/tips/c++-tips-copy-on-write.html" class="nav-link">
+  知识点
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="初识大数据" class="dropdown-title"><span class="title">初识大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="初识大数据" class="mobile-dropdown-title"><span class="title">初识大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/.html" class="nav-link">
+  核心思想
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/algorithm/distribute/alg-distribute-raft.html" class="nav-link">
+  发展与应用
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/algorithm/distribute/alg-distribute-raft.html" class="nav-link">
+  hello bigdata
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程基础" class="dropdown-title"><span class="title">编程基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程基础" class="mobile-dropdown-title"><span class="title">编程基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/basics/java/java.html" class="nav-link">
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/basics/scala/scala.html" class="nav-link">
+  scala
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/basics/jvm/jvm.html" class="nav-link">
+  Jvm
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/basics/structure/structure.html" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/basics/algorithm/algorithm.html" class="nav-link">
+  算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件简介" class="dropdown-title"><span class="title">组件简介</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件简介" class="mobile-dropdown-title"><span class="title">组件简介</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数据源
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/base/db-work-theory.html" class="nav-link">
+  数据库原理
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/sql/sql-overview.html" class="nav-link">
+  SQL语言
+</a></li></ul></li><li class="dropdown-item"><h4>
+          接入层
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/mysql/mysql-overview.html" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          存储层
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/redis/basic/redis-basic-concept.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/es/es-install.html" class="nav-link">
+  ElasticSearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          计算层
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/redis/basic/redis-basic-concept.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/es/es-install.html" class="nav-link">
+  ElasticSearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          调度
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/redis/basic/redis-basic-concept.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/es/es-install.html" class="nav-link">
+  ElasticSearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          即席
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/redis/basic/redis-basic-concept.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/es/es-install.html" class="nav-link">
+  ElasticSearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          监控
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/redis/basic/redis-basic-concept.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/es/es-install.html" class="nav-link">
+  ElasticSearch
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据中台" class="dropdown-title"><span class="title">数据中台</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据中台" class="mobile-dropdown-title"><span class="title">数据中台</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/programming/data-structure/data-structure-overview.html" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/programming/network/network-physical.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/programming/system/doc.html" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/programming/designpattern/designpattern-overview.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow down"></span></button> <button type="button" aria-label="源码分析" class="mobile-dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/develop/library/library-cppcheck.html" class="nav-link">
+  开发 - 常用库
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/develop/tools/tools-install.html" class="nav-link">
+  开发 - 工具安装
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="进阶" class="dropdown-title"><span class="title">进阶</span> <span class="arrow down"></span></button> <button type="button" aria-label="进阶" class="mobile-dropdown-title"><span class="title">进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/develop/library/library-cppcheck.html" class="nav-link">
+  开发 - 常用库
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/develop/tools/tools-install.html" class="nav-link">
+  开发 - 工具安装
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          开源项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/project/opensource/libco/libco.html" class="nav-link">
+  开源协程库 libco
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/project/opensource/buttonrpc/buttonrpc-basic.html" class="nav-link">
+  buttonrpc
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/project/opensource/tars/tars-brief.html" class="nav-link">
+  Tars
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/project/opensource/hmdp/hmdp-overview.html" class="nav-link">
+  Redis实战hmdp
+</a></li></ul></li><li class="dropdown-item"><h4>
+          学习项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/project/study/ssm/spring/spring-basic.html" class="nav-link">
+  SSM框架整合
+</a></li></ul></li><li class="dropdown-item"><h4>
+          个人github项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/project/person/build_lib/build_lib.html" class="nav-link">
+  build_lib
+</a></li></ul></li><li class="dropdown-item"><h4>
+          项目开发
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/project/develop/develop-process.html" class="nav-link">
+  整体开发流程
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="部署" class="dropdown-title"><span class="title">部署</span> <span class="arrow down"></span></button> <button type="button" aria-label="部署" class="mobile-dropdown-title"><span class="title">部署</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          八股文
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/interview/knowledge/cplusplus-knowledge.html" class="nav-link">
+  八股文 详解
+</a></li></ul></li><li class="dropdown-item"><h4>
+          LeetCode编程题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/interview/code/data-structure/data-structure-overview.html" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/interview/code/question-routine/question-routine-backtrack.html" class="nav-link">
+  刷题套路
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/interview/code/question-type/question-type-array.html" class="nav-link">
+  题型分类
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="读书笔记" class="dropdown-title"><span class="title">读书笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="读书笔记" class="mobile-dropdown-title"><span class="title">读书笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          书籍推荐
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/book-note-index.html" class="nav-link">
+  推荐书籍目录
+</a></li></ul></li><li class="dropdown-item"><h4>
+          读书笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/computersystem/computersystem-chapter-1.html" class="nav-link">
+  深入理解计算机系统
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/refactor/refactor-chapter-1.html" class="nav-link">
+  重构改善既有代码的设计
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/effectivecpp/effectivecpp-chapter-2-1.html" class="nav-link">
+  Effective C++:改善程序与设计的55个具体做法
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/stlsource/stlsource-chapter-1.html" class="nav-link">
+  STL源码剖析
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/muduo/muduo-chapter-1.html" class="nav-link">
+  Linux多线程服务端编程——使用muduo C++ 网络库
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/websiteTechArch/websiteTechArch-index.html" class="nav-link">
+  大型网站技术架构——核心原理与案例分析
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/codeComplete/codeComplete-chapter-1.html" class="nav-link">
+  代码大全2
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="成长" class="dropdown-title"><span class="title">成长</span> <span class="arrow down"></span></button> <button type="button" aria-label="成长" class="mobile-dropdown-title"><span class="title">成长</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/grow/person/person-better-than-others.html" class="nav-link">
+  个人
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/grow/product/product.html" class="nav-link">
+  产品
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/grow/team/team-system-arch.html" class="nav-link">
+  团队
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress-starter/md/about/me/about-me.html" class="nav-link">
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试" class="dropdown-title"><span class="title">面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试" class="mobile-dropdown-title"><span class="title">面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          编程基础知识考核
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/basic/c++-basic-use.html" class="nav-link">
+  java
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/basic/c++-basic-use.html" class="nav-link">
+  Jvm
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/basic/c++-basic-use.html" class="nav-link">
+  数据结构与算法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          大数据基础知识考核
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/function/c++-function-Linux_Hook.html" class="nav-link">
+  linux
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/function/c++-function-Linux_Hook.html" class="nav-link">
+  组件原理
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/function/c++-function-Linux_Hook.html" class="nav-link">
+  项目经验
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通用能力考核
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/tips/c++-tips-copy-on-write.html" class="nav-link">
+  表达能力
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/tips/c++-tips-copy-on-write.html" class="nav-link">
+  逻辑思维
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/tips/c++-tips-copy-on-write.html" class="nav-link">
+  性格
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="导读" class="dropdown-title"><span class="title">导读</span> <span class="arrow down"></span></button> <button type="button" aria-label="导读" class="mobile-dropdown-title"><span class="title">导读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          我的经历
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/basic/c++-basic-use.html" class="nav-link">
+  java
+</a></li></ul></li><li class="dropdown-item"><h4>
+          适合人群
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/function/c++-function-Linux_Hook.html" class="nav-link">
+  函数学习
+</a></li></ul></li><li class="dropdown-item"><h4>
+          建议
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/c++/tips/c++-tips-copy-on-write.html" class="nav-link">
+  知识点
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="初识大数据" class="dropdown-title"><span class="title">初识大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="初识大数据" class="mobile-dropdown-title"><span class="title">初识大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/.html" class="nav-link">
+  核心思想
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/algorithm/distribute/alg-distribute-raft.html" class="nav-link">
+  发展与应用
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/algorithm/distribute/alg-distribute-raft.html" class="nav-link">
+  hello bigdata
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程基础" class="dropdown-title"><span class="title">编程基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程基础" class="mobile-dropdown-title"><span class="title">编程基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/basics/java/java.html" class="nav-link">
+  java
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/basics/scala/scala.html" class="nav-link">
+  scala
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/basics/jvm/jvm.html" class="nav-link">
+  Jvm
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/basics/structure/structure.html" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/basics/algorithm/algorithm.html" class="nav-link">
+  算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件简介" class="dropdown-title"><span class="title">组件简介</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件简介" class="mobile-dropdown-title"><span class="title">组件简介</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数据源
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/base/db-work-theory.html" class="nav-link">
+  数据库原理
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/sql/sql-overview.html" class="nav-link">
+  SQL语言
+</a></li></ul></li><li class="dropdown-item"><h4>
+          接入层
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/mysql/mysql-overview.html" class="nav-link">
+  MySQL
+</a></li></ul></li><li class="dropdown-item"><h4>
+          存储层
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/redis/basic/redis-basic-concept.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/es/es-install.html" class="nav-link">
+  ElasticSearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          计算层
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/redis/basic/redis-basic-concept.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/es/es-install.html" class="nav-link">
+  ElasticSearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          调度
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/redis/basic/redis-basic-concept.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/es/es-install.html" class="nav-link">
+  ElasticSearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          即席
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/redis/basic/redis-basic-concept.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/es/es-install.html" class="nav-link">
+  ElasticSearch
+</a></li></ul></li><li class="dropdown-item"><h4>
+          监控
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/redis/basic/redis-basic-concept.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/database/es/es-install.html" class="nav-link">
+  ElasticSearch
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据中台" class="dropdown-title"><span class="title">数据中台</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据中台" class="mobile-dropdown-title"><span class="title">数据中台</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/programming/data-structure/data-structure-overview.html" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/programming/network/network-physical.html" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/programming/system/doc.html" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/programming/designpattern/designpattern-overview.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow down"></span></button> <button type="button" aria-label="源码分析" class="mobile-dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/develop/library/library-cppcheck.html" class="nav-link">
+  开发 - 常用库
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/develop/tools/tools-install.html" class="nav-link">
+  开发 - 工具安装
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="进阶" class="dropdown-title"><span class="title">进阶</span> <span class="arrow down"></span></button> <button type="button" aria-label="进阶" class="mobile-dropdown-title"><span class="title">进阶</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/develop/library/library-cppcheck.html" class="nav-link">
+  开发 - 常用库
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/develop/tools/tools-install.html" class="nav-link">
+  开发 - 工具安装
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目" class="mobile-dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          开源项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/project/opensource/libco/libco.html" class="nav-link">
+  开源协程库 libco
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/project/opensource/buttonrpc/buttonrpc-basic.html" class="nav-link">
+  buttonrpc
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/project/opensource/tars/tars-brief.html" class="nav-link">
+  Tars
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/project/opensource/hmdp/hmdp-overview.html" class="nav-link">
+  Redis实战hmdp
+</a></li></ul></li><li class="dropdown-item"><h4>
+          学习项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/project/study/ssm/spring/spring-basic.html" class="nav-link">
+  SSM框架整合
+</a></li></ul></li><li class="dropdown-item"><h4>
+          个人github项目
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/project/person/build_lib/build_lib.html" class="nav-link">
+  build_lib
+</a></li></ul></li><li class="dropdown-item"><h4>
+          项目开发
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/project/develop/develop-process.html" class="nav-link">
+  整体开发流程
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="部署" class="dropdown-title"><span class="title">部署</span> <span class="arrow down"></span></button> <button type="button" aria-label="部署" class="mobile-dropdown-title"><span class="title">部署</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          八股文
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/interview/knowledge/cplusplus-knowledge.html" class="nav-link">
+  八股文 详解
+</a></li></ul></li><li class="dropdown-item"><h4>
+          LeetCode编程题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/interview/code/data-structure/data-structure-overview.html" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/interview/code/question-routine/question-routine-backtrack.html" class="nav-link">
+  刷题套路
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/interview/code/question-type/question-type-array.html" class="nav-link">
+  题型分类
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="读书笔记" class="dropdown-title"><span class="title">读书笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="读书笔记" class="mobile-dropdown-title"><span class="title">读书笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          书籍推荐
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/book-note-index.html" class="nav-link">
+  推荐书籍目录
+</a></li></ul></li><li class="dropdown-item"><h4>
+          读书笔记
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/computersystem/computersystem-chapter-1.html" class="nav-link">
+  深入理解计算机系统
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/refactor/refactor-chapter-1.html" class="nav-link">
+  重构改善既有代码的设计
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/effectivecpp/effectivecpp-chapter-2-1.html" class="nav-link">
+  Effective C++:改善程序与设计的55个具体做法
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/stlsource/stlsource-chapter-1.html" class="nav-link">
+  STL源码剖析
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/muduo/muduo-chapter-1.html" class="nav-link">
+  Linux多线程服务端编程——使用muduo C++ 网络库
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/websiteTechArch/websiteTechArch-index.html" class="nav-link">
+  大型网站技术架构——核心原理与案例分析
+</a></li><li class="dropdown-subitem"><a href="/vuepress-starter/md/book-note/codeComplete/codeComplete-chapter-1.html" class="nav-link">
+  代码大全2
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="成长" class="dropdown-title"><span class="title">成长</span> <span class="arrow down"></span></button> <button type="button" aria-label="成长" class="mobile-dropdown-title"><span class="title">成长</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/grow/person/person-better-than-others.html" class="nav-link">
+  个人
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/grow/product/product.html" class="nav-link">
+  产品
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress-starter/md/grow/team/team-system-arch.html" class="nav-link">
+  团队
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress-starter/md/about/me/about-me.html" class="nav-link">
+  关于
+</a></div> <!----></nav>  <!----> </aside> <main aria-labelledby="main-title" class="home"><header class="hero"><img src="/vuepress-starter/hero.png" alt="hero"> <h1 id="main-title">
+      大数据知识全栈
+    </h1> <p class="description">
+      个人笔记，费时费力，转载请注明出处
+    </p> <p class="action"><a href="/vuepress-starter/guide/" class="nav-link action-button">
+  Get Started →
+</a></p></header> <div class="features"><div class="feature"><h2>Simplicity First</h2> <p>Minimal setup with markdown-centered project structure helps you focus on writing.</p></div><div class="feature"><h2>Vue-Powered</h2> <p>Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.</p></div><div class="feature"><h2>Performant</h2> <p>VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.</p></div></div> <div class="theme-default-content custom content__default"><h1 id="hello-vuepress"><a href="#hello-vuepress" class="header-anchor">#</a> Hello VuePress</h1></div> <div class="footer content__footer"></div></main></div><div class="global-ui"></div></div>
+    <script src="/vuepress-starter/assets/js/app.55d9b2a7.js" defer></script><script src="/vuepress-starter/assets/js/2.733019b2.js" defer></script><script src="/vuepress-starter/assets/js/7.a0edaaa4.js" defer></script>
+  </body>
+</html>
